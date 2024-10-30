@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: retro;
+  src: url(ARCADECLASSIC.TTF);
+}
+@font-face {
+  font-family: pacman;
+  src: url(PAC-FONT.TTF);
+}
+.navbar {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  background: black;
+  padding: 1.2em;
+  position: relative;
+}
+.links {
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+  gap: 3em;
+}
+.links li {
+  list-style: none;
+}
+.links a {
+  text-decoration: none;
+  color: lime;
+  font-size: 1.5em;
+
+  font-family: retro;
+}
+.logo {
+  font-size: 2em;
+  font-family: pacman;
+  color: red;
+}
+.option .fa.fa-bars {
+  padding: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+.option {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .option {
+    display: block;
+  }
+  body {
+    background: rgb(255, 142, 142);
+  }
+}
+@media only screen and (min-width: 601px) {
+  body {
+    background: greenyellow;
+  }
+}
+.mobile {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(68, 68, 68);
+  width: 67%;
+  height: 100vh;
+}
