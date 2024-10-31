@@ -1,5 +1,19 @@
 const option = document.querySelector(".option");
 const links = document.querySelector(".links");
+const dropdown = document.querySelector(".dropdown");
+const parentDrop = dropdown.parentNode;
+const st = document.querySelector("a:has(+.dropdown)");
+
+parentDrop.addEventListener("click", () => {
+  if (dropdown.style.display === "none") {
+    dropdown.style.display = "block";
+    st.style.scale = 1.2;
+  } else {
+    dropdown.style.display = "none";
+  }
+});
+
+console.log(parentDrop);
 
 option.addEventListener("click", mobile);
 
