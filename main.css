@@ -97,4 +97,6 @@
 }
 .dropdown {
   display: none;
+  padding: 10px;
+  background: rgb(68, 68, 68);
 }
