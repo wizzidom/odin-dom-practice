@@ -37,10 +37,17 @@
 
   font-family: retro;
 }
+.links a:hover {
+  color: red;
+}
 .logo {
   font-size: 2em;
   font-family: pacman;
   color: red;
+}
+.logo:hover {
+  color: lime;
+  cursor: pointer;
 }
 .option .fa.fa-bars {
   padding: 10px;
@@ -50,7 +57,7 @@
 .option {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 622px) {
   .links {
     display: none;
   }
@@ -61,7 +68,7 @@
     background: rgb(255, 142, 142);
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 623px) {
   body {
     background: greenyellow;
   }
@@ -74,4 +81,15 @@
   background: rgb(68, 68, 68);
   width: 67%;
   height: 100vh;
+  padding: 20px;
+  font-size: 1.2em;
+}
+.mobile a {
+  padding: 10px;
+  display: block;
+}
+.mobile.links a:hover {
+  color: red;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
