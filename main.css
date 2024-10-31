@@ -11,6 +11,7 @@
   font-family: pacman;
   src: url(PAC-FONT.TTF);
 }
+/* Navabr */
 .navbar {
   display: flex;
 
@@ -109,3 +110,45 @@
 .dropdown li:hover {
   background: gray;
 }
+/* End of navbar */
+
+/* Start of Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prev,
+.next {
+  font-size: 2em;
+  background-color: black;
+  color: lime;
+  padding-left: 15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+.slide img {
+  width: 100%;
+}
+.carousel {
+  position: absolute;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+/*End of Carousel */
